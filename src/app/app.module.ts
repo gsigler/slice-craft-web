@@ -9,6 +9,7 @@ import { BlogComponent } from './views/blog/blog.component';
 import { FooterComponent } from './footer/footer.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { PostComponent } from './views/blog/post/post.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     NavbarComponent,
     HomeComponent,
     BlogComponent,
-    FooterComponent
+    FooterComponent,
+    PostComponent
   ],
   imports: [
     HttpClientModule,
