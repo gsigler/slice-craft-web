@@ -17,7 +17,6 @@ export class BlogPostsService {
           flatMap(posts => posts),
           filter(posts => posts.id === id),
           mergeMap(post => {
-            console.log(post);
             return this.http.get(`assets/posts/${post.handle}`, { responseType: 'text' })
               .pipe(
                 map(p => {
