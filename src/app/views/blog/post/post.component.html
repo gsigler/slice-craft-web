@@ -1,5 +1,4 @@
-<div *ngIf="post">
-  <h1>{{post.title}}</h1>
+<div class="post" *ngIf="post">
   <div>
     <markdown [data]="post.content"></markdown>
   </div>

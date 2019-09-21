@@ -1,11 +1,11 @@
 <div class="blog">
   <h1>Posts</h1>
 
-  <div class="post" *ngFor="let post of posts" [routerLink]="['/blog', post.id]">
+  <div class="post" *ngFor="let post of posts" [routerLink]="['/blog', post.title]">
     <h2>{{post.title}}</h2>
-    {{post.author}}
-    {{post.published | date }}
+    <div class="post-details">
+      <span>{{post.author}}</span>
+      <span>{{post.published | date }}</span>
+    </div>
   </div>
-  <!-- class="post" *ngFor="let post of posts"><a [routerLink]="['/blog', post.id]">{{post.title}}</a></li> -->
-  <!-- </ul> -->
 </div>
