@@ -1,0 +1,38 @@
+.home {
+  display: flex;
+}
+
+img {
+  display: none;
+}
+
+.content {
+  width: 100%;
+  padding: 50px;
+  background-color: black;
+}
+
+.content p {
+  color: white;
+}
+
+.content * {
+  color: white;
+  margin: 20px;
+}
+
+.content button {
+  margin: 20px 0px;
+}
+
+.content h1 {
+  color: #f85b5d;
+}
+
+@media only screen and (min-width: 800px) {
+  img {
+    display: inline-block;
+    max-width: 33%;
+    height: auto;
+  }
+}
