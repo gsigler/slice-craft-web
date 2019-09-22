@@ -1,14 +1,6 @@
 ---
--
-  id: 1
-  title: foo
-  published: '2012-04-23T18:25:43.511Z'
+- id: 1
+  title: finishing
+  published: "2012-04-23T18:25:43.511Z"
   author: grady
-  handle: 'finishing.md'
-
--
-  id: 2
-  title: bar
-  published: '2012-04-23T18:25:43.511Z'
-  author: stephanie
-  handle: 'finishing.md'
+  handle: "finishing.md"
