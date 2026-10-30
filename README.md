@@ -41,3 +41,18 @@ Keep the source directory and published copy in sync.
 To preview just these pages, run `python3 -m http.server 8095 --directory src`
 and open `http://localhost:8095/fact-faceoff/`. The pages use locally hosted
 Fredoka and Nunito fonts. Their font licenses are included in the directory.
+
+## Website analytics
+
+The main Angular website loads PostHog through `src/assets/analytics.js`.
+It uses the public project token and US Cloud ingestion host. Page views follow
+history changes, so navigation between the home page, journal, and guide is
+tracked. Etsy buttons emit `shop_clicked` with their placement in `location`.
+Local previews do not load the SDK. Session replay is disabled. The standalone
+Fact Faceoff pages do not load this script.
+
+For a production build with Node 22, install the locked dependencies with
+`npm ci --ignore-scripts --legacy-peer-deps` and run
+`NODE_OPTIONS=--openssl-legacy-provider npm run build -- --prod`.
+The ignored install scripts avoid obsolete native Sass builds; Angular falls
+back to the Dart Sass implementation already included in the lockfile.

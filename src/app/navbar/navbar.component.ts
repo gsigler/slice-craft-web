@@ -9,6 +9,15 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
+  skipToContent(event: Event) {
+    event.preventDefault();
+    const main = document.getElementById('main');
+    if (main) {
+      main.focus();
+      main.scrollIntoView();
+    }
+  }
+
   ngOnInit() {
   }
 

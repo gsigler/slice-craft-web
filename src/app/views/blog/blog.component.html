@@ -1,11 +1,3 @@
-<div class="blog">
-  <h1>Posts</h1>
-
-  <div class="post" *ngFor="let post of posts" [routerLink]="['/blog', post.title]">
-    <h2>{{post.title}}</h2>
-    <div class="post-details">
-      <span>{{post.author}}</span>
-      <span>{{post.published | date }}</span>
-    </div>
-  </div>
-</div>
+<section class="blog"><p class="eyebrow">Notes from the craft table</p><h1>The craft journal</h1><p class="lede">Ideas and practical guides for making your printed pieces your own.</p>
+  <a class="post" *ngFor="let post of posts" [routerLink]="['/blog', post.title]"><img src="assets/img/img6.jpeg" alt="A painted miniature house with snowy trim" /><div><p class="eyebrow">Painting &amp; finishing</p><h2>{{ post.title === 'finishing' ? 'A little house, finished your way' : post.title }}</h2><p>Our step-by-step guide to painting, adding snow, and sealing your Slice Craft model.</p><span class="text-link">Read the guide ↗</span></div></a>
+</section>

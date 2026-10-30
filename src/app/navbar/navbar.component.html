@@ -1,8 +1,9 @@
-<div class="navbar">
-  <a routerLink="/home"><img src="assets/img/slice-craft.png" alt="slice craft logo" /></a>
-  <div class="links">
-    <a routerLink="/home">Home</a>
-    <a routerLink="/blog">Blog</a>
-    <a href="https://www.etsy.com/shop/slicecraft">Shop</a>
-  </div>
-</div>
+<a class="skip-link" href="#main" (click)="skipToContent($event)">Skip to content</a>
+<header class="navbar">
+  <a class="brand" routerLink="/home" aria-label="Slice Craft home"><img src="assets/img/slice-craft.png" alt="Slice Craft" width="630" height="240" /></a>
+  <nav class="links" aria-label="Main navigation">
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/blog" routerLinkActive="active">The craft journal</a>
+    <a class="shop-link" href="https://www.etsy.com/shop/slicecraft" data-analytics="shop" data-location="navigation">Shop on Etsy <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
