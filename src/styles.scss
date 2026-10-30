@@ -1,9 +1,9 @@
 @import "assets/css/reset.css";
 :root {
-  --paper: #f8f5ef;
-  --ink: #263d35;
-  --muted: #626960;
-  --coral: #d94e52;
+  --paper: #fcfaf8;
+  --ink: #343434;
+  --muted: #65615f;
+  --coral: #de0587;
   --line: #deded2;
 }
 * {
@@ -55,7 +55,7 @@ img {
   height: auto;
 }
 .eyebrow {
-  color: #a43e42;
+  color: #a90062;
   font-size: .72rem;
   font-weight: 700;
   letter-spacing: .16em;
@@ -68,15 +68,15 @@ img {
   gap: 25px;
   min-height: 52px;
   padding: 12px 24px;
-  background: var(--ink);
+  background: #b9006b;
   color: white;
-  border: 1px solid var(--ink);
+  border: 1px solid #b9006b;
   font-size: .86rem;
   font-weight: 600;
   transition: background .2s;
 }
 .button:hover {
-  background: #3c574a;
+  background: #950058;
   color: white;
 }
 .text-link {

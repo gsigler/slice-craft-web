@@ -46,8 +46,8 @@ Fredoka and Nunito fonts. Their font licenses are included in the directory.
 
 The main Angular website loads PostHog through `src/assets/analytics.js`.
 It uses the public project token and US Cloud ingestion host. Page views follow
-history changes, so navigation between the home page, journal, and guide is
-tracked. Etsy buttons emit `shop_clicked` with their placement in `location`.
+history changes. The main site is a single landing page for custom house
+ornaments, with orders handled on Etsy. Former blog URLs redirect to home. Etsy buttons emit `shop_clicked` with their placement in `location`.
 Local previews do not load the SDK. Session replay is disabled. The standalone
 Fact Faceoff pages do not load this script.
 
@@ -56,3 +56,10 @@ For a production build with Node 22, install the locked dependencies with
 `NODE_OPTIONS=--openssl-legacy-provider npm run build -- --prod`.
 The ignored install scripts avoid obsolete native Sass builds; Angular falls
 back to the Dart Sass implementation already included in the lockfile.
+
+## Homepage assets
+
+`src/assets/img/slice-craft-logo.svg` is exported from the selected color logo
+artboard in the Affinity document `new slice craft logo.afdesign`.
+`src/assets/img/custom-house-detail.jpg` is a product photo from our Etsy listing:
+https://www.etsy.com/listing/1137916249/custom-3d-home-replica-handpainted

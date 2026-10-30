@@ -1,18 +1,17 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./views/home/home.component";
-import { BlogComponent } from "./views/blog/blog.component";
-import { PostComponent } from "./views/blog/post/post.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
-  { path: "blog", component: BlogComponent },
-  { path: "blog/:title", component: PostComponent }
+  { path: "blog", redirectTo: "/home", pathMatch: "full" },
+  { path: "blog/:title", redirectTo: "/home" },
+  { path: "**", redirectTo: "/home" }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: "enabled" })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
