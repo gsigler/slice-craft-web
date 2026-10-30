@@ -29,3 +29,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Deploy 
 ng build --prod    
 ng deploy --cname=www.slicecraft.co
+
+## Fact Faceoff pages
+
+The app landing page, support page, and privacy policy are static files in
+`src/fact-faceoff/`. Angular's assets configuration copies this directory to
+`/fact-faceoff/` in production builds. They can also be published directly to
+the matching directory on `gh-pages` without rebuilding the older Angular app.
+Keep the source directory and published copy in sync.
+
+To preview just these pages, run `python3 -m http.server 8095 --directory src`
+and open `http://localhost:8095/fact-faceoff/`. The pages use locally hosted
+Fredoka and Nunito fonts. Their font licenses are included in the directory.
