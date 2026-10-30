@@ -21,6 +21,26 @@ h1 {
   font-size: 1.04rem;
   line-height: 1.85;
 }
+.maker-intro {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 16px;
+}
+.maker-intro img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  object-position: 44% 38%;
+  border-radius: 48% 52% 45% 55%;
+  border: 2px solid var(--ink);
+  box-shadow: 3px 3px 0 #02dce3;
+}
+.maker-intro p {
+  font-size: .85rem;
+  font-weight: 700;
+  color: var(--ink);
+}
 .button {
   margin-top: 30px;
 }

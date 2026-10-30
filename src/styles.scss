@@ -65,19 +65,39 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
-  min-height: 52px;
-  padding: 12px 24px;
+  gap: 12px;
+  min-height: 62px;
+  padding: 13px 25px;
   background: #b9006b;
   color: white;
-  border: 1px solid #b9006b;
-  font-size: .86rem;
-  font-weight: 600;
-  transition: background .2s;
+  border: 3px solid var(--ink);
+  border-radius: 20px 28px 22px 26px;
+  box-shadow: 5px 5px 0 #02dce3;
+  font-size: 1rem;
+  font-weight: 700;
+  transform: rotate(-1deg);
+  transition: transform .18s, box-shadow .18s, background .18s;
 }
 .button:hover {
   background: #950058;
   color: white;
+  transform: rotate(0deg) translate(-2px, -2px);
+  box-shadow: 7px 7px 0 #02dce3;
+}
+.button:active {
+  transform: rotate(-1deg) translate(4px, 4px);
+  box-shadow: 2px 2px 0 #02dce3;
+}
+.house-doodle {
+  width: 24px;
+  height: 27px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform: rotate(-5deg);
 }
 .text-link {
   display: inline-block;

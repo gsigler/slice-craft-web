@@ -67,3 +67,5 @@ https://www.etsy.com/listing/1137916249/custom-3d-home-replica-handpainted
 The comparison gallery uses three original paired photos from the same listing.
 Each file contains both the house and its ornament. CSS displays the relevant
 half in the labeled comparison, without changing the original photographs.
+
+`src/assets/img/stephanie.jpg` is the supplied portrait, resized for web display.
